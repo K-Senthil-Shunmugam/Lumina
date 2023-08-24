@@ -3,7 +3,7 @@ import openai
 import pymongo
 
 # Set up OpenAI API key
-openai.api_key = "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"
+openai.api_key = st.secrets["API_KEY"]
 
 # Set up MongoDB connection
 client = pymongo.MongoClient("mongodb+srv://nullbyte:nullbyte@lumina.mkc3wga.mongodb.net")  
