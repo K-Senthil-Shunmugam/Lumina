@@ -4,3 +4,4 @@ pymongo
 news
 statsmodels
 sklearn
+scikit-learn
