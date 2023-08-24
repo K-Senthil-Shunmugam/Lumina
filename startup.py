@@ -6,7 +6,7 @@ import pymongo
 openai.api_key = st.secrets["API_KEY"]
 
 # Set up MongoDB connection
-client = pymongo.MongoClient("mongodb+srv://nullbyte:nullbyte@lumina.mkc3wga.mongodb.net")  
+client = pymongo.MongoClient(st.secrets["CONNECTION_STRING"])  
 db = client["Lumina"]  # Replace with your actual database name
 collection = db["startup"]  
 
